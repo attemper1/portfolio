@@ -1,0 +1,178 @@
+body{
+    font-size: 14px;
+}
+a{
+    font-size: 14px;
+}
+h1{
+    font-size: 32px;
+    margin-top: 10px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 18px;
+}
+section{
+    padding: 100px 10px;
+}
+section:nth-child(3){
+    padding-top: 40px;
+}
+section:last-child{
+    padding-bottom: 0;
+}
+section h3{
+    margin-top: 0px;
+}
+.wrapper{
+    padding: 0;
+}
+.wrapper p:last-child{
+    margin-bottom: 0;
+}
+#main_header{
+    height: 50px;
+    line-height: 50px;
+}
+#main_header .btn-home{
+    width: calc(100% / 4);
+    height: 50px;
+    margin: 0 auto;
+}
+#main_header .btn-toggle,
+#main_header .btn-close{
+    top: 12px; right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    visibility: hidden;
+}
+#main_header .btn-toggle.show,
+#main_header .btn-close.show{
+    visibility: visible;
+}
+#gnb{
+    top: 50px;
+    background: #224361;
+    height: 0; opacity: 0;
+    transition-duration: .4s;
+    overflow: hidden;
+}
+#gnb.show{
+    height: 50px; opacity: 1;
+}
+#gnb.visible{
+    overflow: visible;
+}
+#gnb li{
+    width: calc(100% / 4); height: 50px;
+}
+#gnb .depth2 li{
+    width: 100%;
+}
+#gnb .depth2.show{
+    height: 200px;
+}
+#main_visual{
+    padding-top: 100px;
+}
+#main_visual img:first-child{
+    width: 40px;
+    margin-top: 10px; margin-right: 10px;
+}
+#main_visual figcaption{
+    margin-top: 10px;
+    font-size: 12px;
+}
+#main_visual h2{
+    margin-top: 16px;
+}
+#main_visual h3{
+    margin-top: 10px;
+}
+#main #main_visual h3{
+    margin-top: 0; margin-left: 10px;
+}
+#main_visual a{
+    font-size: 10px;
+}
+#main_visual .btn-url a{
+    font-size: 14px;
+}
+#about h4{
+    margin-top: 40px; margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+}
+#about p{
+    margin-bottom: 0;
+}
+#about figcaption{
+    margin-bottom: 20px;
+}
+#about .wrapper P{
+    margin-bottom: 0;
+}
+#about .col_6{
+    margin-bottom: 40px;
+}
+#about li{
+    width: 40px;
+}
+#about ul:last-child li:first-child{
+    width: 80px;
+}
+#main_footer{
+    height: 50px;
+    font-size: 12px;
+    line-height: 1.5em;
+    padding: 5px;
+}
+#main_footer a{
+    font-size: 12px;
+}
+#main_footer a,
+#main_footer address{
+    display: inline-block;
+}
+#project_bean #analyse .col_4{
+    width: calc((100% / 12 * 6) - 10px);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+#project_bean #draft .col_2{
+    position: absolute;
+}
+#project_bean #draft .col_6{
+    width: calc((100% / 12 * 6) - 6px);
+    /*
+    질문
+    이미지 구성을 이렇게 하고싶은데 마진값이나 높이값으로 잡으면
+    가로너비에 따라서(가변)) 첫번째 이미지와 두번째 세번째 이미지 세로 간격이 차이가 심해서요
+    해결방법이 있을까요
+    이건 배치가 너무 애매한데.. 의도하는 바를 모르겠음
+    사실pc버전도
+    저기이미지들 밑단을 맞추고싶은데
+    가로가가변이라 그거도 안되고
+    모바일은 아이폰플러스 기준으로 이렇게 나오게 하고 싶어요
+    -> 모바일에서 구분되어 보이려면 첫번째 이미지하고 텍스트 까지만 구분되야 되는데
+    하단 여백이 다르다는 거네요? 네
+    */
+    /* margin-bottom: 360px; */
+    /* 미디어 쿼리로 해당 부분 모바일에서만  clear해보면 어떨지? */
+    /* pc버전은 어떻게 되나요? 음 이건 레이아웃 구조에 따라 다를텐데
+    세로를 col_4 col_2 col_6 으로 맞추고
+    col_2를 비워놓고
+    col_6 밑에 이미지 두개를 넣었던것같아요
+    여기 이미지들 밑단을 맞  
+    음 이거는 좀 상황을 봐야 겠는데 일단 해보시고 코드를 깃허브에 함 올려봐주세요
+    넵 */
+}
+#project_bean #draft .col_4{
+    width: calc((100% / 12 * 6) - 6px);
+}
+#project_bean #draft .col_4:nth-child(4){
+    clear: both;
+}

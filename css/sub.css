@@ -1,0 +1,90 @@
+/*
+질문2
+메인헤더 gnb 위치질문
+#main_header>.container>#gnb에서
+container max-width: 1200px로 지정하고
+gnb를 container오른쪽 끝에 고정하고싶습니다.
+지금은 전체화면으로하면 container를 넘어가서 화면 끝쪽까지 가버려요.
+float: right를 하면 되긴하는데 depth2가 날아가는것같아요.
+*/
+/*
+질문1
+첫번째 섹션을 제외한 모든 짝수번째 섹션에 아래와같이 배경색과 글꼴색상을 지정하고 싶은데
+예외처리하는법이 있을까요
+first-child로 덮어씌우려했는데 적용이 안되는거 같아요
+*/
+section:nth-child(2n){    
+    background: #224361;
+    color: #fff;
+}
+/* 그냥 이렇게 하세요 -> first-child 아님(body 안에   첫번째는  header)
+아네! */
+section#main_visual{
+    background: #fff;
+    color: #333;
+    padding-bottom: 0;
+}
+section img{
+    box-shadow: 1px 1px 3px #707070;
+}
+.btn-url{
+    background: #e0e0e0;
+    padding: 4px 10px;
+    margin: 5px 0;
+    border-radius: 25px;
+    display: inline-block;
+}
+.btn-url a{
+    font-weight: 700;
+}
+#main_visual img{
+    box-shadow: none;
+}
+/*main icon size*/
+#main_visual img:first-child{
+    width: 80px;
+    float: left;
+    margin-top: 20px; margin-right: 20px;
+}
+#main_visual h3{
+    float: none;
+    margin: 50px 0 0;
+}
+#main_visual a{
+    font-size: 14px;
+    font-weight: 900;
+}
+#main_visual img:last-child{
+    width: 100%;
+}
+#main_visual figcaption{
+    font-size: 16px;
+    margin-top: 40px;
+}
+/*design_ps.html*/
+#design_ps #hpdesign .container:first-child{
+    margin-bottom: 40px;
+}
+/*design_ai.html*/
+#design_ai #board img{
+    box-shadow: none;
+    margin: 0 auto;
+    max-width: 800px;
+}
+/*publishing_xd.html*/
+#publishing_xd #mobile img{
+    box-shadow: none;
+}
+/*project_bean.html*/
+#project_bean #analyse .col_4{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#project_bean #draft .col_2,
+#project_bean #draft .col_6{
+    margin-bottom: 240px;
+}
+/*project_frozen.html*/
+#project_frozen #draft .container:first-child{
+    margin-bottom: 40px;
+}
