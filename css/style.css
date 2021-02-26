@@ -143,14 +143,26 @@ figcaption{
 }
 #gallery li{
     /* box-shadow: 1px 1px 3px #707070; */
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     transition-duration: .4s;
 }
-#gallery li:hover{
-    opacity: .8;
+#gallery ul.row1 .frame li:first-child,
+#gallery ul.row1 .frame li:last-child{
+    background: #FCE4EC;
 }
-#gallery>.container>ul.row1>li:last-child,
-#gallery>.container>ul.row2>li:first-child{
+#gallery ul.row1 .frame li:nth-child(2),
+#gallery ul.row1 .frame li:nth-child(3){
+    background: #fbe9d4;
+}
+#gallery ul.row2 .frame li:first-child,
+#gallery ul.row2 .frame li:last-child{
+    background: #FCE4EC;
+}
+#gallery ul.row2 .frame li:nth-child(2),
+#gallery ul.row2 .frame li:nth-child(3){
+    background: #E0F2F1;
+}
+#gallery .frame{
     box-shadow: none;
     border: none;
     background: none;
