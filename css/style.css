@@ -112,8 +112,8 @@ figcaption{
     background: rgba(229, 207, 98, .9);
 }
 #gnb .middle li{
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-left: 1px solid rgba(255, 255, 255, .9);
+    border-right: 1px solid rgba(255, 255, 255, .9);
 }
 /*mouseout - default(hidden)*/
 #gnb .depth2{
@@ -153,6 +153,7 @@ figcaption{
 #gallery>.container>ul.row2>li:first-child{
     box-shadow: none;
     border: none;
+    background: none;
 }
 /* gallery more button*/
 #gallery .row2,
@@ -170,7 +171,8 @@ figcaption{
     text-align: center;
 }
 #gallery .fas{
-    color: #ccc;
+    color: #ccc;    
+    cursor: pointer;
 }
 #about{
     clear: both;
@@ -250,6 +252,10 @@ figcaption{
 섹션 사이 그리고 컨테이너 사이 위아래 간격을 두고싶은데 패딩 마진이 적용이 안되요
 시안은 가상 데스크탑 (ctrl+window키+방향키 왼쪽)에 있습니다
 */
+/*scroll to top*/
+#main_footer .container:last-child{
+    position: relative;
+}
 #btn-top{
     position: fixed;
     bottom: 40px; right: 40px;

@@ -1,112 +1,119 @@
 * { 
-    box-sizing: border-box;
-  }
-  .container {
-    /* clear: both; */
+  box-sizing: border-box;
+}
+.container {
+  /* clear: both; */
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
+}
+/*sub_col*/
+.sub_col_6:first-child{
+  margin-top: 0; margin-left: 0;
+}
+.sub_col_6:nth-child(2){
+  margin-top: 0; margin-right: 0;
+}
+.sub_col_6:nth-child(3){
+  margin-bottom: 0; margin-left: 0;
+}
+.sub_col_6:last-child{
+  margin-bottom: 0; margin-right: 0;
+}
+/* PC에만 적용 */
+@media screen and (min-width: 769px) {
+  .row {
     overflow: hidden;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* outline: 1px solid red; */
   }
-  
-  /* PC에만 적용 */
-  @media screen and (min-width: 769px) {
-    .row {
-      overflow: hidden;
-    }
-  
-    [class*=col_] {
-      /* border: 1px solid green; */
-      float: left;
-      /* padding: 20px; */
-      margin: 3px;
-    }
-  
-    /* 
-       col = (container너비 / 그리드 수12) * 칼럼수
-       col(gutter) = ((container너비 / 12 * 칼럼수) - gutter)
-       @container_width
-       @col_width
-       @gutter_width
-    */
-    .col_1 {
-      width: calc((100% / 12 * 1) - 6px);
-    }
-  
-    .col_2 {
-       width: calc((100% / 12 * 2) - 6px);
-    }
-  
-    .col_3 {
-       width: calc((100% / 12 * 3) - 6px);
-    }
-  
-    .col_4 {
-      width: calc((100% / 12 * 4) - 6px);
-    }
-  
-    .col_5 {
-      width: calc((100% / 12 * 5) - 6px);
-    }
-  
-    .col_6 {
-       width: calc((100% / 12 * 6) - 6px);
-    }
-  
-    .col_7 {
-      width: calc((100% / 12 * 7) - 6px);
-    }
-  
-    .col_8 {
-      width: calc((100% / 12 * 8) - 6px);
-    }
-  
-    .col_9 {
-      width: calc((100% / 12 * 9) - 6px);
-    }
-  
-    .col_10 {
-      width: calc((100% / 12 * 10) - 6px);
-    }
-  
-    .col_11 {
-      width: calc((100% / 12 * 11) - 6px);
-    }
-  
-    .col_12 {
-      width: calc((100% / 12 * 12) - 6px);
-    }
-    /*sub_col*/
-    .sub_col_6{
-      width: calc((100% / 12 * 6) - 3px);
-    }
-    .sub_col_6:first-child{
-      margin-top: 0; margin-left: 0;
-    }
-    .sub_col_6:nth-child(2){
-      margin-top: 0; margin-right: 0;
-    }
-    .sub_col_6:nth-child(3){
-      margin-bottom: 0; margin-left: 0;
-    }
-    .sub_col_6:last-child{
-      margin-bottom: 0; margin-right: 0;
-    }
+
+  [class*=col_] {
+    /* border: 1px solid green; */
+    float: left;
+    /* padding: 20px; */
+    margin: 3px;
   }
-  /*mobile grid*/
-  @media screen and (max-width: 768px){
-    [class*=col_] {
-      float: left;
-      margin: 3px;
-    }
-    .sub_col_6{
-      width: calc((100% / 12 * 6)  - 6px);
-    }
-    .col_3 {
+
+  /* 
+      col = (container너비 / 그리드 수12) * 칼럼수
+      col(gutter) = ((container너비 / 12 * 칼럼수) - gutter)
+      @container_width
+      @col_width
+      @gutter_width
+  */
+  .col_1 {
+    width: calc((100% / 12 * 1) - 6px);
+  }
+
+  .col_2 {
+      width: calc((100% / 12 * 2) - 6px);
+  }
+
+  .col_3 {
+      width: calc((100% / 12 * 3) - 6px);
+  }
+
+  .col_4 {
+    width: calc((100% / 12 * 4) - 6px);
+  }
+
+  .col_5 {
+    width: calc((100% / 12 * 5) - 6px);
+  }
+
+  .col_6 {
       width: calc((100% / 12 * 6) - 6px);
-    }
-    .col_4 {
-      width: calc((100% / 12 * 4) - 6px);
-    }
   }
+
+  .col_7 {
+    width: calc((100% / 12 * 7) - 6px);
+  }
+
+  .col_8 {
+    width: calc((100% / 12 * 8) - 6px);
+  }
+
+  .col_9 {
+    width: calc((100% / 12 * 9) - 6px);
+  }
+
+  .col_10 {
+    width: calc((100% / 12 * 10) - 6px);
+  }
+
+  .col_11 {
+    width: calc((100% / 12 * 11) - 6px);
+  }
+
+  .col_12 {
+    width: calc((100% / 12 * 12) - 6px);
+  }
+  /*gallery pc*/
+  #gallery .col_6{
+    margin: 6px;
+    width: calc((100% / 12 * 6) - 12px);
+  }
+  /*sub_col pc*/
+  .sub_col_6{
+    margin: 6px;
+    width: calc((100% / 12 * 6) - 6px);
+  }
+}
+/*mobile grid*/
+@media screen and (max-width: 768px){
+  [class*=col_] {
+    float: left;
+    margin: 3px;
+  }
+  /*sub_col mobile*/
+  .sub_col_6{
+    width: calc((100% / 12 * 6) - 3px);
+  }
+  .col_3 {
+    width: calc((100% / 12 * 6) - 6px);
+  }
+  .col_4 {
+    width: calc((100% / 12 * 4) - 6px);
+  }
+}

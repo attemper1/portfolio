@@ -52,7 +52,7 @@ $(function(){
 $(function(){
     $(document).on("scroll",function(){
         var scrollY=$(document).scrollTop();
-        if(scrollY > 600){
+        if(scrollY > 400){
             $("#btn-top").addClass("show");
         }else{
             $("#btn-top").removeClass("show");
