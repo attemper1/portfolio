@@ -1,6 +1,9 @@
 *{
     margin: 0; padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Nanum Gothic', sans-serif;
     color: #333;
@@ -151,6 +154,24 @@ figcaption{
     box-shadow: none;
     border: none;
 }
+/* gallery more button*/
+#gallery .row2,
+#gallery .btn-more,
+#gallery .btn-hide{
+    display: none;
+}
+#gallery .row2.show,
+#gallery .btn-more.show,
+#gallery .btn-hide.show{
+    display: block;
+}
+#gallery .btn-more,
+#gallery .btn-hide{
+    text-align: center;
+}
+#gallery .fas{
+    color: #ccc;
+}
 #about{
     clear: both;
     color: #fff;
@@ -229,3 +250,15 @@ figcaption{
 섹션 사이 그리고 컨테이너 사이 위아래 간격을 두고싶은데 패딩 마진이 적용이 안되요
 시안은 가상 데스크탑 (ctrl+window키+방향키 왼쪽)에 있습니다
 */
+#btn-top{
+    position: fixed;
+    bottom: 40px; right: 40px;
+    display: none;
+}
+#btn-top.show{
+    display: block;
+}
+.fa-angle-double-up{
+    color: #ccc;
+    opacity: .6;
+}

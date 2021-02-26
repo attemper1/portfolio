@@ -101,6 +101,9 @@ section h3{
 #main_visual .btn-url a{
     font-size: 14px;
 }
+#gallery{
+    padding-bottom: 0;
+}
 #about h4{
     margin-top: 40px; margin-bottom: 20px;
     font-weight: 700;

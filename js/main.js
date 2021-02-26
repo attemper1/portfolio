@@ -13,6 +13,11 @@ $(function(){
         }
     );
 });
+$(function(){
+    $("#gnb .slide>a").on("click",function(){
+        return false;
+    });
+});
 //#gnb mobile
 $(function(){
     $(".btn-toggle").on("click",function(){
@@ -27,4 +32,30 @@ $(function(){
         $("#main_header .btn-toggle").addClass("show");
         $("#main_header .btn-close").removeClass("show");
     });
+});
+//#gallery
+$(function(){
+    $("#gallery .btn-more").on("click",function(){
+        $("#gallery .row2").addClass("show");
+        $("#gallery .btn-more").removeClass("show");
+        $("#gallery .btn-hide").addClass("show");
+    });
+});
+$(function(){
+    $("#gallery .btn-hide").on("click",function(){
+        $("#gallery .row2").removeClass("show");
+        $("#gallery .btn-more").addClass("show");
+        $("#gallery .btn-hide").removeClass("show");
+    });
+});
+//scroll top
+$(function(){
+    $(document).on("scroll",function(){
+        var scrollY=$(document).scrollTop();
+        if(scrollY > 600){
+            $("#btn-top").addClass("show");
+        }else{
+            $("#btn-top").removeClass("show");
+        }
+    })
 });
