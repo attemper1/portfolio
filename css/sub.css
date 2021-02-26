@@ -80,10 +80,29 @@ section img{
     margin-left: 20px;
     margin-right: 20px;
 }
-#project_bean #draft .col_2,
+/* #project_bean #draft .col_2,
 #project_bean #draft .col_6{
     margin-bottom: 240px;
+} */
+/* 2021-02-25 레이아웃 수정 */
+@media screen and (min-width: 768px){
+    #draft .container {
+        position: relative;
+        /* border: 2px solid green; */
+    }
+    #draft .bottom1 {
+        position: absolute;
+        /* border: 2px solid red; */
+        right: 0; bottom: 0;
+        transform: translateX(-100%) translateX(-6px);
+    }
+    #draft .bottom2 {
+        position: absolute;
+        /* border: 2px solid red; */
+        right: 0; bottom: 0;
+    }
 }
+/* -------------------- */
 /*project_frozen.html*/
 #project_frozen #draft .container:first-child{
     margin-bottom: 40px;
