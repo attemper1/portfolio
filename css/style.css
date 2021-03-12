@@ -141,6 +141,9 @@ figcaption{
     margin: 30px 20px 0;
     float: left;
 }
+#gallery h3{
+    display: none;
+}
 #gallery li{
     /* box-shadow: 1px 1px 3px #707070; */
     /* border: 1px solid #ccc; */
