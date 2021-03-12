@@ -181,9 +181,7 @@ figcaption{
 #gallery .btn-more,
 #gallery .btn-hide{
     text-align: center;
-}
-#gallery .fas{
-    color: #ccc;    
+    color: #ccc;
     cursor: pointer;
 }
 #about{

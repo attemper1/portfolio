@@ -104,6 +104,10 @@ section h3{
 #gallery{
     padding-bottom: 0;
 }
+#gallery .btn-more p,
+#gallery .btn-hide p{
+    font-size: 14px;
+}
 #about{
     padding-top: 40px;
 }
