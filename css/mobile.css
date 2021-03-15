@@ -203,6 +203,9 @@ section h3{
 #validation #main_visual .notice{
     top: 55px; right: 5px;
 }
+#validation #main_visual .notice input{
+    margin-bottom: 2px;
+}
 #validation #main .container{
     margin-top: 40px;
 }
