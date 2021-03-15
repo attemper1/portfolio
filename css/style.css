@@ -291,6 +291,9 @@ figcaption{
     top: 100px; right: 20px;
     text-align: right;
 }
+#validation #main_visual .notice input{
+    vertical-align: middle;
+}
 #validation #main_visual .notice a{
     text-decoration: underline;
 }
