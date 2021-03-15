@@ -187,8 +187,10 @@ section h3{
 #project_bean #draft .col_4:nth-child(4){
     clear: both;
 }
-#validation p,
-#validation a{
+#validation p{
+    font-size: 12px;
+}
+#validation #main_visual a{
     font-size: 12px;
 }
 #validation #main_visual .notice{
