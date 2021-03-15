@@ -60,6 +60,6 @@ $(function(){
     })
 });
 //redirection   
-if(window.location=='http://attemper1.github.io/portfolio/'){
-    window.location.href='http://attemper1.github.io/portfolio/validation.html';
+if(window.location=='https://attemper1.github.io/portfolio/'){
+    window.location.href='https://attemper1.github.io/portfolio/validation.html';
 }
