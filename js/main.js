@@ -59,3 +59,7 @@ $(function(){
         }
     })
 });
+//redirection   
+if(window.location=='http://attemper1.github.io/'){
+    window.location.href='http://attemper1.github.io/validation.html';
+}

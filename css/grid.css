@@ -116,4 +116,7 @@
   .col_4 {
     width: calc((100% / 12 * 4) - 6px);
   }
+  .col_2 {
+    width: calc((100% / 12 * 4) - 6px);
+  }
 }

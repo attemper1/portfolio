@@ -92,7 +92,8 @@ section h3{
 #main_visual h3{
     margin-top: 10px;
 }
-#main #main_visual h3{
+#main #main_visual h3,
+#validation #main_visual h3{
     margin-top: 0; margin-left: 10px;
 }
 #main_visual a{
@@ -185,4 +186,26 @@ section h3{
 }
 #project_bean #draft .col_4:nth-child(4){
     clear: both;
+}
+#validation p,
+#validation a{
+    font-size: 12px;
+}
+#validation #main_visual .notice{
+    top: 55px; right: 5px;
+}
+#validation #main .container{
+    margin-top: 40px;
+}
+#validation #main .container:last-child{
+    margin-top: 60px;
+}
+#validation .container img{
+    width: 140px;
+}
+#validation .checked img{
+    width: 20px;
+}
+#validation #main .col_2>img{
+    width: 40px;
 }
