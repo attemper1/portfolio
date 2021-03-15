@@ -103,6 +103,9 @@ figcaption{
     width: 120px; 
     height: 80px;
 }
+#gnb li a{
+    height: 80px;
+}
 /*depth1*/
 #gnb .depth1 li{
     float: left;
@@ -110,6 +113,11 @@ figcaption{
 /*depth2*/
 #gnb .depth2{
     background: rgba(229, 207, 98, .9);
+}
+#gnb .depth2 img{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 25px;
 }
 #gnb .middle li{
     border-left: 1px solid rgba(255, 255, 255, .9);
@@ -124,7 +132,7 @@ figcaption{
 }
 /*mouseover*/
 #gnb .depth2.show{
-    height: 240px;
+    height: 320px;
     opacity: 1;
 }
 #main_visual{

@@ -69,8 +69,15 @@ section h3{
 #gnb li{
     width: calc(100% / 4); height: 50px;
 }
+#gnb li a{
+    height: 50px;
+}
 #gnb .depth2 li{
     width: 100%;
+}
+#gnb .depth2 img{
+    width: 40%;
+    padding-top: 15px;
 }
 #gnb .depth2.show{
     height: 200px;
