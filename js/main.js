@@ -1,5 +1,5 @@
 $(function(){
-    //2depth메뉴 액션
+    //2depth menu action
     $("#gnb>ul>li.slide").hover(
         function(){
             //mouseover
@@ -97,13 +97,14 @@ $(function(){
     });
 });
 $(function(){
-    if(readCookie("redirect")!="today"){
+    if(readCookie("redirect")="today"){
         if(window.location=='https://attemper1.github.io/portfolio/'){
-        window.location.href='https://attemper1.github.io/portfolio/validation.html';
+        window.location.href='https://attemper1.github.io/portfolio/index.html';
         }else{
             if(window.location=='https://attemper1.github.io/portfolio/'){
-            window.location.href='https://attemper1.github.io/portfolio/index.html';
+            window.location.href='https://attemper1.github.io/portfolio/validation.html';
             }
         }
     }
 });
+//special thanks to - Woosom | Imsong | YBKing | G 'the pengsu' Chae
