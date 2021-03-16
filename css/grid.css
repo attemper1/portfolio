@@ -2,12 +2,10 @@
   box-sizing: border-box;
 }
 .container {
-  /* clear: both; */
   overflow: hidden;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  /* outline: 1px solid red; */
 }
 /*sub_col*/
 .sub_col_6:first-child{
@@ -29,19 +27,9 @@
   }
 
   [class*=col_] {
-    /* border: 1px solid green; */
     float: left;
-    /* padding: 20px; */
     margin: 3px;
   }
-
-  /* 
-      col = (container너비 / 그리드 수12) * 칼럼수
-      col(gutter) = ((container너비 / 12 * 칼럼수) - gutter)
-      @container_width
-      @col_width
-      @gutter_width
-  */
   .col_1 {
     width: calc((100% / 12 * 1) - 6px);
   }

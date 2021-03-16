@@ -97,12 +97,12 @@ $(function(){
     });
 });
 $(function(){
-    if(readCookie("redirect")="today"){
+    if(readCookie("redirect")!="today"){
         if(window.location=='https://attemper1.github.io/portfolio/'){
-        window.location.href='https://attemper1.github.io/portfolio/index.html';
+        window.location.href='https://attemper1.github.io/portfolio/validation.html';
         }else{
             if(window.location=='https://attemper1.github.io/portfolio/'){
-            window.location.href='https://attemper1.github.io/portfolio/validation.html';
+            window.location.href='https://attemper1.github.io/portfolio/index.html';
             }
         }
     }
