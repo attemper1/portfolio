@@ -172,6 +172,9 @@ section h3{
 #project_bean #draft .col_4:nth-child(4){
     clear: both;
 }
+#btn-top{
+    bottom: 10px; right: 10px;
+}
 #validation p{
     font-size: 12px;
 }

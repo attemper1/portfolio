@@ -262,6 +262,8 @@ figcaption{
     position: fixed;
     bottom: 40px; right: 40px;
     display: none;
+    color: #fff;
+    opacity: .5;
 }
 #btn-top.show{
     display: block;
