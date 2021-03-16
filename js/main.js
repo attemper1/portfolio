@@ -59,7 +59,51 @@ $(function(){
         }
     })
 });
-//redirection   
-if(window.location=='https://attemper1.github.io/portfolio/'){
-    window.location.href='https://attemper1.github.io/portfolio/validation.html';
+//cookie
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
 }
+
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+    console.log(document.cookie);   //name=value
+    console.log(ca);    //["name=value"]
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+        console.log(c); //name=value
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+//today box checked
+$(function(){
+    $("#validation #boxToday").on("click",function(){
+        if($("#boxToday").prop("checked")){
+            createCookie("redirect","today",1);
+            window.location.href='https://attemper1.github.io/portfolio/index.html'
+        }
+    });
+});
+$(function(){
+    if(readCookie("redirect")!="today"){
+        if(window.location=='https://attemper1.github.io/portfolio/'){
+        window.location.href='https://attemper1.github.io/portfolio/validation.html';
+        }else{
+            if(window.location=='https://attemper1.github.io/portfolio/'){
+            window.location.href='https://attemper1.github.io/portfolio/index.html';
+            }
+        }
+    }
+});
