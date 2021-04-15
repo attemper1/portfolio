@@ -107,4 +107,4 @@ $(function(){
         }
     }
 });
-//special thanks to - Woosom | Imsong | YBKing | G 'the pengsu' Chae
+//special thanks to - Woo 'the hundred' Som | Im 'not gay but' Song | YB 'the color blind' King | G 'the pengsu' Chae
